@@ -16,24 +16,31 @@ header {
     background-color: aqua;
     font-size: 2vw;
     margin: 10px;
-    justify-content: space-evenly
+    justify-content: start;
+    align-items: center;
 }
 
-header p {}
+nav {
+    display: flex;
+    justify-items: center;
+}
+
+header ul {}
 
 header img,
 p {
     flex-grow: 1;
-    background-color: bisque;
+    margin-left: 10px;
+    justify-content: start;
 }
 
-header ul {
-    justify-content: space-around;
-}
-
-header li {
+nav li {
     display: inline;
-    margin: 10px;
+    margin-left: 20px;
+}
+
+ul {
+    background-color: aquamarine;
 }
 
 li a {

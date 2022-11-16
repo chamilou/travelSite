@@ -1,0 +1,42 @@
+*,
+.after,
+.before {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {}
+
+header {
+    display: flex;
+    background-color: aqua;
+    font-size: 2vw;
+    margin: 10px;
+    justify-content: space-evenly
+}
+
+header p {}
+
+header img,
+p {
+    flex-grow: 1;
+    background-color: bisque;
+}
+
+header ul {
+    justify-content: space-around;
+}
+
+header li {
+    display: inline;
+    margin: 10px;
+}
+
+li a {
+    font-variant-caps: small-caps;
+    text-decoration: none;
+}

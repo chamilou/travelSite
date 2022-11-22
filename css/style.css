@@ -14,7 +14,7 @@ body {}
 header {
     display: flex;
     background-color: aqua;
-    font-size: 2vw;
+    font-size: 2.5vw;
     margin: 10px;
     justify-content: start;
     align-items: center;
@@ -22,10 +22,8 @@ header {
 
 nav {
     display: flex;
-    justify-items: center;
+    flex-grow: 1;
 }
-
-header ul {}
 
 header img,
 p {
@@ -34,16 +32,16 @@ p {
     justify-content: start;
 }
 
-nav li {
+ul li {
     display: inline;
     margin-left: 20px;
-}
-
-ul {
-    background-color: aquamarine;
 }
 
 li a {
     font-variant-caps: small-caps;
     text-decoration: none;
+}
+
+main {
+    margin: 10px;
 }

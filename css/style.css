@@ -45,3 +45,8 @@ li a {
 main {
     margin: 10px;
 }
+
+#hideButton {
+    margin: 10px;
+    background-color: red;
+}

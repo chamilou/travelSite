@@ -1,29 +1,32 @@
+let showCont = 1;
 let cont = document.getElementById("cont");
-cont.addEventListener("click", callMe);
+cont.addEventListener("click", showContact);
 
 
-
-
+function showContact() {
+    if (showCont == 1) {
+        callMe()
+    } else {
+        hideContact()
+    }
+}
+//finction callMe show the contact telephone
 function callMe() {
     let ul = document.getElementById("insertContact");
     ul.innerHTML = "";
     a = document.createElement("a")
     li = document.createElement("li")
-    but = document.createElement("button")
-    but.setAttribute('id', 'hideButton')
-    but.innerText = "Спрятать";
-    but.addEventListener('click', hideContact)
     a.setAttribute("href", 'tel:+79679379376')
-    console.log(a)
     a.innerText = "Tel: +7-967-937-937-6"
     li.appendChild(a)
-    li.appendChild(but)
     ul.appendChild(li)
-
-
+    showCont = 0
 }
 
 function hideContact() {
     let ul = document.getElementById("insertContact");
     ul.innerHTML = "";
+    showCont = 1
 }
+
+//show a new content

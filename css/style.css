@@ -22,14 +22,17 @@ header {
 
 nav {
     display: flex;
-    flex-grow: 1;
+    /* justify-content: space-around; */
 }
 
 header img,
 p {
-    flex-grow: 1;
     margin-left: 10px;
-    justify-content: start;
+}
+
+ul {
+    display: flex;
+    justify-items: end;
 }
 
 ul li {
@@ -44,9 +47,4 @@ li a {
 
 main {
     margin: 10px;
-}
-
-#hideButton {
-    margin: 10px;
-    background-color: red;
 }
